@@ -1,0 +1,58 @@
+.countUI{
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+    background-color: #f0f7f8;
+    color: #425a65;
+}
+
+.countUI p{
+    font-size: 120px;
+}
+.button__wrapper{
+    display: flex;
+    gap: 20px;
+}
+.button__wrapper button{
+    border: none;
+    background-color: white;
+    box-shadow: 0 0 10px #cfd8dc;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out, transform 50ms ease-in;
+}
+.button__wrapper button:hover{
+    background-color: #cfd8dc;
+}
+
+.button__wrapper button:active{
+    transform: scale(0.9);
+}
+.button__wrapper button:focus{
+    box-shadow: 0 0 0 3px #425a65;
+}
+.negative{
+    color: #ff1744;
+    animation: pulse 500ms ease-in-out;
+}
+.positive{
+    color: #2abf77;
+    animation: pulse 500ms ease-in-out;
+}
+@keyframes pulse{
+    0%,
+    100% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1,2)
+    }
+}
